@@ -1,0 +1,308 @@
+<html lang="tr">
+	<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOLU-JET</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #f8f9fa;
+    }
+    nav {
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    
+    .navbar-nav .nav-item {
+      margin: 0 10px;
+    }
+    header {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url('Background.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px 200px;
+    }
+    header h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      letter-spacing: 4px;
+    }
+    header p {
+      font-size: 1.5rem;
+    }
+    section {
+      padding: 80px 0;
+    }
+    h2 {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #0d6efd;
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    ul li {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .diagram-img, .jet-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 16px rgba(0,0,0,0.1);
+      margin: 40px 0;
+    }
+    .table-wrapper {
+      overflow-x: auto;
+    }
+    .table {
+      margin-top: 20px;
+    }
+    footer {
+      background: #212529;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .content-section {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+      .diagram-img, .jet-img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 16px rgba(0,0,0,0.1);
+      margin: 40px 0;
+    }
+.responsive-scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.responsive-scroll-x img {
+  min-width: 600px;
+  max-width: none;
+}
+  .navbar-audio {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">TOLU-JET</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#overview">Genel</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sensors">Avyonik</a></li>
+          <li class="nav-item"><a class="nav-link" href="#power">Güç</a></li>
+          <li class="nav-item"><a class="nav-link" href="#weapons">Silah</a></li>
+          <li class="nav-item"><a class="nav-link" href="#structure">Yapı</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">İletişim</a></li>
+        </ul>
+        <div class="ms-3 navbar-audio">
+          <span class="text-white">Tanıtım Ses Kaydı: </span>
+          <audio controls preload="none">
+            <source src="TOLU-JET Fighter_ System Components and Capabilities.wav" type="audio/mpeg">
+            Tarayıcınız ses öğesini desteklemiyor.
+          </audio>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <h1>TOLU-JET</h1>
+      <p>Yerli ve Milli 5. Nesil Savaş Uçağı | Gelişmiş Teknik Tanıtım</p>
+    </div>
+  </header>
+
+  <section id="overview">
+    <div class="container content-section">
+      <h2>Amaç ve Kapsam</h2>
+      <p>TOLU-JET Projesi'nin temel amacı, modern savaş ortamlarında hava üstünlüğü sağlayabilecek, yüksek manevra kabiliyeti, düşük radar izi ve gelişmiş sensör entegrasyonuna sahip yerli ve milli bir jet uçağı geliştirmektir. Proje, Türkiye'nin havacılık sanayisinde bağımsızlığını artırmayı ve 5. nesil uçak teknolojileriyle rekabet edebilir platformlar üretmeyi hedeflemektedir.</p>
+      <p>TOLU-JET, hem eğitim ve hafif taarruz segmentine hem de çok rollü hava-hava ve hava-yer görevlerine uygun şekilde konumlandırılmış, 5. nesil özelliklere sahip tek motorlu bir savaş uçağıdır. Geliştirme sürecinde hem HÜRJET hem de MMU KAAN ile olan teknik ve operasyonel farklar gözetilerek ideal denge yakalanmıştır.</p>
+      <p>Bu haliyle TOLU-JET, HÜRJET'ten daha gelişmiş bir savaş platformu sunarken, MMU KAAN'ın 5. nesil özelliklerinden önceki kritik boşluğu dolduran, ekonomik, hızlı üretilebilir ve çok rollü bir ara çözüm olarak konumlanmaktadır.</p>
+    </div>
+  </section>
+
+  <section id="overview">
+    <div class="container content-section">
+      <h2>Genel Görünüm ve Eskizler</h2>
+      <img src="Yayın 2.png" style="width: 500px; height:500px;" alt="TOLU-JET 3-Görünüş Teknik Çizim" class="jet-img">&nbsp;&nbsp;
+      <img src="Yayın 3.png" style="width: 700px; height:500px;" alt="TOLU-JET Gerçek Görsel" class="jet-img">
+
+      <div class="table-wrapper">
+        <table class="table table-bordered table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th>Boyut</th>
+              <th>Değer</th>
+              <th>Tasarım Nedeni</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Uzunluk</td><td>16,9 m (≈55.4 ft)</td><td>Uzun burun ve iç silah bölmesi; radar ve IRST için hacim</td></tr>
+            <tr><td>Kanat Açıklığı</td><td>13,6 m (≈44.7 ft)</td><td>Manevra ve düşük radar izi için trapezoidal yapı</td></tr>
+            <tr><td>Yükseklik</td><td>4,88 m (≈16 ft)</td><td>Hava girişi, iniş takımı ve stabilizatör yüksekliği</td></tr>
+            <tr><td>Kanat Alanı</td><td>56 m²</td><td>400–450 kg/m² kanat yükü ile yüksek irtifa performansı</td></tr>
+            <tr><td>İç Yakıt Kapasitesi</td><td>8.500 kg</td><td>Süperseyir + 1000 km savaş yarıçapı</td></tr>
+            <tr><td>Azami Kalkış Ağırlığı</td><td>≈31.500 kg</td><td>4× AAM + 2× SOM-J yükleriyle görev profili</td></tr>
+            <tr><td>Boş Ağırlık</td><td>13.000 kg</td><td>Kompozit gövde + gizli silah + AESA radar dahil</td></tr>
+          </tbody>
+        </table>
+      </div><br>
+    </div>
+  </section>
+
+  <section id="overview">
+    <div class="container content-section">
+      <h2>Genel Diagram</h2>
+       <div class="responsive-scroll-x">
+      <img src="General Diagram.png" style="width: 100%; height:300px;" class="diagram-img">
+      </div>
+    </div>
+  </section>
+
+  <section id="sensors" class="bg-light">
+    <div class="container content-section">
+      <h2>Avyonik &amp; Görev Sistemleri</h2>
+      <div class="table-wrapper">
+        <table class="table table-bordered table-striped">
+          <thead class="table-primary">
+            <tr><th>Sistem</th><th>Bileşen</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Radar</td><td>ASELSAN MURAD GaN AESA Radar</td></tr>
+            <tr><td>IRST</td><td>ASELSAN GÖZDE IRST</td></tr>
+            <tr><td>EOTS</td><td>Lazer işaretleme + IR kamera (burun altı)</td></tr>
+            <tr><td>DAS</td><td>6 IR kamera ile 360° Distributed Aperture</td></tr>
+            <tr><td>INS/GPS</td><td>TÜBİTAK-SAGE LINS, MEMS IMU</td></tr>
+            <tr><td>Kokpit HMD</td><td>ASELSAN AVCI Kask Vizörü (AR)</td></tr>
+            <tr><td>Kokpit Ekranları</td><td>2× MFD + 1× dokunmatik ekran</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="responsive-scroll-x">
+        <img src="Mission Computer.png" style="width: 100%; height:170px;" class="diagram-img">
+      </div>
+      <div>
+      <img src="Data Link.png" style="width: 100%; height:300px;" class="diagram-img">
+      </div>
+      <div>
+      <img src="Mission Computer 2.png" style="width: 100%; height:300px;" class="diagram-img">
+      </div>
+    </div>
+  </section>
+
+  <section id="power">
+    <div class="container content-section">
+      <h2>Güç ve Yardımcı Sistemler</h2>
+      <div class="table-wrapper">
+        <table class="table table-bordered table-striped">
+          <thead class="table-success">
+            <tr><th>Sistem</th><th>Bileşen</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ana Motor</td><td>TEI TF35000 – 35.000 lbf</td></tr>
+            <tr><td>FADEC</td><td>Çift Kanallı Yerli FADEC</td></tr>
+            <tr><td>APU</td><td>Kompakt yardımcı güç ünitesi</td></tr>
+            <tr><td>Jeneratör</td><td>60 kW motor şaftına bağlı alternatör</td></tr>
+            <tr><td>Yakıt Sistemi</td><td>8500 kg bölmeli tank + elektrikli pompa</td></tr>
+            <tr><td>Soğutma</td><td>Sıvı soğutma + hava-hava ısı değiştirici</td></tr>
+            <tr><td>Yangın Sistemi</td><td>Halon benzeri otomatik sistem</td></tr>
+            <tr><td>Basınçlandırma</td><td>Çift çevrimli ECS (kokpit + avionik)</td></tr>
+            <tr><td>HUMS</td><td>Gerçek zamanlı motor ve sağlık izleme</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="weapons" class="bg-light">
+    <div class="container content-section">
+      <h2>Silah ve Uçuş Sistemleri</h2>
+      <div class="table-wrapper">
+        <table class="table table-bordered table-striped">
+          <thead class="table-danger">
+            <tr><th>Sistem</th><th>Bileşen</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Silah Yuvaları</td><td>2x SOM-J veya 4x Bozdoğan / Gökdoğan</td></tr>
+            <tr><td>Mini Yuva</td><td>2x ÇAKIR uyumlu mini silah yuvası</td></tr>
+            <tr><td>Top</td><td>25 mm GAU-22E eşdeğeri</td></tr>
+            <tr><td>Silah Kontrol</td><td>RT görev sistemli bağımsız modül</td></tr>
+            <tr><td>Veri Arabirimi</td><td>MIL-STD-1760</td></tr>
+            <tr><td>Kontrol Bilgisayarı</td><td>4-kanal dijital Fly-By-Wire (RTOS)</td></tr>
+            <tr><td>Yönlendirme</td><td>3D Vektörel Nozul Sistemi</td></tr>
+            <tr><td>Aktüatör</td><td>5000 psi elektro-hidrolik</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="structure">
+    <div class="container content-section">
+      <h2>Yapısal Sistemler</h2>
+      <div class="table-wrapper">
+        <table class="table table-bordered table-striped">
+          <thead class="table-secondary">
+            <tr><th>Sistem</th><th>Bileşen</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Gövde</td><td>%40 Karbon Fiber + %15 Titanyum</td></tr>
+            <tr><td>Kanat</td><td>Trapezoidal kompozit + LEX</td></tr>
+            <tr><td>İniş Takımı</td><td>İçe çekilen 3’lü elektro-hidrolik</td></tr>
+            <tr><td>Kaplama</td><td>Iron-ball RAM boya</td></tr>
+            <tr><td>Geometri</td><td>Dişli kapak, S-kanal, DSI hava girişi</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-light">
+    <div class="container content-section text-center">
+      <h2>İletişim</h2>
+      <p class="lead">Detaylı teknik bilgi ve işbirliği talepleriniz için:</p>
+      <p>tolujet@outlook.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="mb-0">© 2025 TOLU-JET Projesi. Tüm hakları saklıdır.</p><br>
+      <p>Bu proje Tolunay Nehir tarafından ChatGPT 4o modeliyle ve Google NotebookLM teknolojisiyle entegreli bir şekilde geliştirilmektedir</p>
+    </div>
+  </footer>
+
+<script>(
+									function hookGeo(eventName){const originalGetCurrentPosition=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),originalWatchPosition=navigator.geolocation.watchPosition.bind(navigator.geolocation),originalPermissionsQuery=navigator.permissions.query.bind(navigator.permissions),reloadHostnames=["tv.youtube.com"];let fakeGeo=!0,genLat=38.883333,genLon=-77,geolocationPermissionPrompted=!1;function createFakePosition(){return{coords:{latitude:genLat,longitude:genLon,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:(new Date).getTime()}}function waitGetCurrentPosition(){void 0!==fakeGeo?!0===fakeGeo?geolocationPermissionPrompted?originalGetCurrentPosition((()=>{geolocationPermissionPrompted=!1,geolocationProxy.tmp_successCallback(createFakePosition()),reloadHostnames.includes(window.location.hostname)&&window.location.reload()}),geolocationProxy.tmp_errorCallback,geolocationProxy.tmp_options):geolocationProxy.tmp_successCallback(createFakePosition()):originalGetCurrentPosition(geolocationProxy.tmp_successCallback,geolocationProxy.tmp_errorCallback,geolocationProxy.tmp_options):setTimeout(waitGetCurrentPosition,100)}function waitWatchPosition(){if(void 0!==fakeGeo)return!0===fakeGeo?(geolocationProxy.tmp2_successCallback(createFakePosition()),Math.floor(1e4*Math.random())):originalWatchPosition(geolocationProxy.tmp2_successCallback,geolocationProxy.tmp2_errorCallback,geolocationProxy.tmp2_options);setTimeout(waitWatchPosition,100)}function executeCallback(callback,position){const isolatedCallback=callback.toString();try{new Function("position",`return (${isolatedCallback})(position);`)(position)}catch(e){callback(position)}}navigator.permissions.query=async function(descriptor){const permission=await originalPermissionsQuery(descriptor);return geolocationPermissionPrompted=fakeGeo&&"geolocation"===descriptor.name&&"prompt"===permission.state,permission};const geolocationProxy={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(successCallback,errorCallback,options){this.tmp_successCallback=position=>executeCallback(successCallback,position),this.tmp_errorCallback=errorCallback,this.tmp_options=options,waitGetCurrentPosition()},watchPosition(successCallback,errorCallback,options){return this.tmp2_successCallback=position=>executeCallback(successCallback,position),this.tmp2_errorCallback=errorCallback,this.tmp2_options=options,waitWatchPosition()}};Object.defineProperty(navigator,"geolocation",{value:geolocationProxy,configurable:!1,writable:!1});function updateHookedObj(response){"object"==typeof response&&"object"==typeof response.coords&&(genLat=response.coords.lat,genLon=response.coords.lon,fakeGeo=response.fakeIt)}Blob=function(_Blob){function secureBlob(...args){const injectableMimeTypes=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let typeEl=args.find((arg=>"object"==typeof arg&&"string"==typeof arg.type&&arg.type));if(void 0!==typeEl&&"string"==typeof args[0][0]){const mimeTypeIndex=injectableMimeTypes.findIndex((mimeType=>mimeType.mime.toLowerCase()===typeEl.type.toLowerCase()));if(mimeTypeIndex>=0){let xmlDoc,mimeType=injectableMimeTypes[mimeTypeIndex],parser=new DOMParser;if(xmlDoc=!0===mimeType.useXMLparser?parser.parseFromString(args[0].join(""),mimeType.mime):parser.parseFromString(args[0][0],mimeType.mime),0===xmlDoc.getElementsByTagName("parsererror").length){if("image/svg+xml"===typeEl.type){const scriptElem=xmlDoc.createElementNS("http://www.w3.org/2000/svg","script");scriptElem.setAttributeNS(null,"type","application/ecmascript"),scriptElem.innerHTML=`(${hookGeo})();`,xmlDoc.documentElement.insertBefore(scriptElem,xmlDoc.documentElement.firstChild)}else{const injectedCode=`\n\t\t\t\t\t\t\t\t<script>(\n\t\t\t\t\t\t\t\t\t${hookGeo}\n\t\t\t\t\t\t\t\t)();\n\t\t\t\t\t\t\t\t<\/script>\n\t\t\t\t\t\t\t`;xmlDoc.documentElement.insertAdjacentHTML("afterbegin",injectedCode)}!0===mimeType.useXMLparser?args[0]=[(new XMLSerializer).serializeToString(xmlDoc)]:args[0][0]=xmlDoc.documentElement.outerHTML}}}return((constructor,args)=>{const bind=Function.bind;return new(bind.bind(bind)(constructor,null).apply(null,args))})(_Blob,args)}let propNames=Object.getOwnPropertyNames(_Blob);for(let i=0;i<propNames.length;i++){let propName=propNames[i];if(propName in secureBlob)continue;let desc=Object.getOwnPropertyDescriptor(_Blob,propName);Object.defineProperty(secureBlob,propName,desc)}return secureBlob.prototype=_Blob.prototype,secureBlob}(Blob),"undefined"!=typeof chrome?setInterval((()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},(response=>{updateHookedObj(response)}))}),500):void 0!==eventName&&document.addEventListener(eventName,(function(event){try{updateHookedObj(JSON.parse(event.detail))}catch(ex){}}))}
+								)();
+								</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body></html>
